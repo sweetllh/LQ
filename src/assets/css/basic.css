@@ -1,0 +1,88 @@
+@charset "utf-8";
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    font-family: '微软雅黑';
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+em, i {
+    font-style: normal;
+}
+ul,li{
+    list-style-type: none;
+}
+strong {
+    font-weight: normal;
+}
+input,textarea,select,option{
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline-color: transparent;
+}
+input:focus,select:focus{
+	border: 1px solid #f00 !important;
+}
+input.searchInput{
+	border: 1px solid transparent !important;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+::-webkit-input-placeholder {
+    color: #d6d6d6;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #d6d6d6;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #d6d6d6;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d6d6d6;
+  }
+  :-o-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #d6d6d6;
+  }
+  input::-ms-clear{display:none;}
+  input::-ms-reveal{display:none;}
+  
+  /*自动填充的背景*/
+  input:-webkit-autofill{
+	-webkit-box-shadow: 0 0 0 1000px white inset;  
+  }
+
+
+  .listLoading{
+	/*background: #f3f3f3;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	color: #FC4514;
+ }
+ .listLoading div{
+	margin-top: 10px;
+ }
